@@ -1,0 +1,123 @@
+#include <stdio.h>
+#include<string.h>
+char k[6]="waxnsc";//选择密钥
+int* shun()
+{
+	int i,k,te;
+	static int temp[6];
+	int t[6];
+	for(i=0;i<6;i++)
+	{
+		temp[i]=(int)(k[i]-96);
+		t[i]=temp[i];
+	}
+	for(i=0;i<6;i++)
+	{	
+		for(k=0;k<6;k++)
+		{
+			if(t[i]>t[i+1])
+			te=t[i];
+			t[i]=t[i+1];
+			t[i+1]=te;
+		}
+	}
+	for(i=0;i<6;i++)
+	{
+		for(k=0;k<6;k++)
+		{
+			if(temp[i]==t[k])
+			temp[i]=k;
+		}
+	}
+return temp;
+}
+int jiami()
+{
+	char zifu[100],char te[6];
+	char juz[18][6];
+	int i,k,l,temp;
+	int * p;
+	printf("输入明文："); 
+	scanf("%s",zifu);
+	p=shun();	
+	for(i=0;i<strlen(zifu);i++)
+	{
+		temp=(int)i/6;
+		juz[temp][i%6]=zifu[i];
+	}
+	for(i=0;i<temp;i++)
+	{
+		for(l=0;l<6;l++)
+		{
+			te[l]=juz[i][l];
+		}
+		for(k=0;k<6;k++)
+		{
+			juz[i][p[k]]=te[i][k];
+			
+		}	
+	}
+	printf("密文：");
+	for(i=0;i<6;i++)
+	{
+		for(k=0;k<temp;k++) 
+		printf("%s",juz[k][i]);
+	}
+	printf("\n");
+	return 0;	
+}
+int jiemi()
+{
+	char zifu[100],char te[6];
+	char juz[18][6];
+	int i,k,l,temp;
+	int * p;
+	printf("输入密文："); 
+	scanf("%s",zifu);
+	p=shun();	
+	for(i=0;i<strlen(zifu);i++)//得到行数temp的值得 
+	{
+		temp=(int)i/6;
+	}
+	for(i=0;i<6;i++)
+	{
+		for(k=0;k<temp;k++)
+		{
+			juz[k][i]=zifu[temp*i+k];
+		}
+	}
+	for(i=0;i<temp;i++)
+	{
+		for(l=0;l<6;l++)
+		{
+			te[l]=juz[i][l];
+		}
+		for(k=0;k<6;k++)
+		{
+			juz[i][k]=te[i][p[k]];
+			
+		}	
+	}
+	printf("明文：");
+	for(i=0;i<temp;i++)
+	{
+		printf("%c",juz[i]);
+	}
+	printf("\n");	
+}
+int main() 
+{
+	int a;
+	while(1)
+	{
+		printf("按1加密，按2解密，按3退出");
+		scanf("%d",&a);
+		if(a==1)
+		jiami();
+		if(a==2)
+		jiemi();
+		if(a==3)
+		exit(0);
+	}	
+	return 0;
+}

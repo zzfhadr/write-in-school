@@ -1,0 +1,94 @@
+this programa only caculate probability which tring times less then 30 and
+probability having less digits than 0.062
+maybe it will work to other values not matching above standards, you can try
+input order is day and probability(no % input such as 50%)
+Probability of hitting 1  out of 30 times   2.906667e-001
+Accumulation   2.906667e-001
+
+Probability of hitting 2  out of 30 times   2.785814e-001
+Accumulation   5.692481e-001
+
+Probability of hitting 3  out of 30 times   1.718612e-001
+Accumulation   7.411092e-001
+
+Probability of hitting 4  out of 30 times   7.667793e-002
+Accumulation   8.177872e-001
+
+Probability of hitting 5  out of 30 times   2.635497e-002
+Accumulation   8.441421e-001
+
+Probability of hitting 6  out of 30 times   7.258388e-003
+Accumulation   8.514005e-001
+
+Probability of hitting 7  out of 30 times   1.644910e-003
+Accumulation   8.530454e-001
+
+Probability of hitting 8  out of 30 times   3.125856e-004
+Accumulation   8.533580e-001
+
+Probability of hitting 9  out of 30 times   5.050541e-005
+Accumulation   8.534085e-001
+
+Probability of hitting 10 out of 30 times   7.010453e-006
+Accumulation   8.534155e-001
+
+Probability of hitting 11 out of 30 times   8.425045e-007
+Accumulation   8.534164e-001
+
+Probability of hitting 12 out of 30 times   8.817256e-008
+Accumulation   8.534165e-001
+
+Probability of hitting 13 out of 30 times   8.069590e-009
+Accumulation   8.534165e-001
+
+Probability of hitting 14 out of 30 times   6.476811e-010
+Accumulation   8.534165e-001
+
+Probability of hitting 15 out of 30 times   4.566451e-011
+Accumulation   8.534165e-001
+
+Probability of hitting 16 out of 30 times   2.829690e-012
+Accumulation   8.534165e-001
+
+Probability of hitting 17 out of 30 times   1.540305e-013
+Accumulation   8.534165e-001
+
+Probability of hitting 18 out of 30 times   7.353034e-015
+Accumulation   8.534165e-001
+
+Probability of hitting 19 out of 30 times   3.069609e-016
+Accumulation   8.534165e-001
+
+Probability of hitting 20 out of 30 times   1.115924e-017
+Accumulation   8.534165e-001
+
+Probability of hitting 21 out of 30 times   3.512402e-019
+Accumulation   8.534165e-001
+
+Probability of hitting 22 out of 30 times   9.497577e-021
+Accumulation   8.534165e-001
+
+Probability of hitting 23 out of 30 times   2.183553e-022
+Accumulation   8.534165e-001
+
+Probability of hitting 24 out of 30 times   4.209587e-024
+Accumulation   8.534165e-001
+
+Probability of hitting 25 out of 30 times   6.677895e-026
+Accumulation   8.534165e-001
+
+Probability of hitting 26 out of 30 times   8.488385e-028
+Accumulation   8.534165e-001
+
+Probability of hitting 27 out of 30 times   8.312089e-030
+Accumulation   8.534165e-001
+
+Probability of hitting 28 out of 30 times   5.886569e-032
+Accumulation   8.534165e-001
+
+Probability of hitting 29 out of 30 times   2.683386e-034
+Accumulation   8.534165e-001
+
+Probability of hitting 30 out of 30 times   5.912221e-037
+Accumulation   8.534165e-001
+
